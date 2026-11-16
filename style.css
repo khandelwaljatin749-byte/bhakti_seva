@@ -1,0 +1,253 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf0;
+    color: #392719;
+    line-height: 1.6;
+}
+
+header {
+    background: #8b350c;
+    color: white;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #ffd36a;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd36a;
+}
+
+
+.hero {
+    min-height: 550px;
+    padding: 130px 20px;
+    text-align: center;
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("images/temple-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffd36a;
+    color: #542509;
+    padding: 12px 24px;
+    margin: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 45px auto;
+}
+
+.container h2 {
+    text-align: center;
+    color: #963c0d;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #ead7b9;
+    box-shadow: 0 4px 12px rgba(80, 40, 10, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(80, 40, 10, 0.15);
+}
+
+.card h3 {
+    color: #9c410d;
+    margin-bottom: 12px;
+}
+
+.card a {
+    display: inline-block;
+    color: #b54d0b;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.devotional {
+    font-size: 20px;
+    color: #84380c;
+    line-height: 2;
+    margin: 15px 0;
+}
+
+.form-box {
+    background: white;
+    max-width: 500px;
+    margin: 45px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #ddc9ad;
+}
+
+.form-box h2 {
+    text-align: center;
+    color: #963c0d;
+    margin-bottom: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #d5b994;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background: #9b3d0c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c35a12;
+}
+
+.message {
+    text-align: center;
+    padding: 12px;
+    margin: 15px auto;
+    max-width: 600px;
+    background: #fff0d3;
+    color: #703509;
+    border-radius: 6px;
+}
+
+footer {
+    background: #54250e;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+footer a {
+    color: #ffd36a;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ead7b9;
+    text-align: left;
+}
+
+th {
+    background: #963c0d;
+    color: white;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .container {
+        width: 94%;
+    }
+}
